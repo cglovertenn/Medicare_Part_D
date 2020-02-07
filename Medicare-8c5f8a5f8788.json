@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "medicare-261318",
+  "private_key_id": "8c5f8a5f8788ddd060c7ea23e587ac1c09beb8a6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCq6G5vkHiaf1s5\nSJLHd/JHJ2lXqoR0EnYH4KJtXZIU0DVwigucMEJsW1KUWMIybJk5rgYUZe3pSqBJ\nCzAfqBFYVrI0po04vHYSXzD/iSv7M/nr6FPUNfEPvrrXRdSPalXJih7r6DCav3Ud\nMmeCeAgcAZQEZhjAIlKB9SwvMRe6Vg6Evx1vRA2CObD/5wXSPkmhwGV79xL6FSXT\nEdshBaTb/PiN2LMCBT3uRHB7txh4zoEq8aGDxUML1siKs9f1YLgclzCx0RceyR8W\nkCxviLcvmiegMPSz/fTis01GFiXzRKiaBWXY1IHJBE1H1NX5e68gL4iFk/SqjvHO\nx03duQenAgMBAAECggEAFYuXVHrULAyPGFHE/d6/TRIJA9NhaZfkMkpddPJoATYI\nQ/IwftWkogVXNpAD7Jhn2UTOIRHXzreo14cmChpFaYCwbCvCP4Xz+o1D34r635Wm\nAC6PLCr1WJn08uuA3ZLhqAvAqdZhE45m+gcfKRbvABzWJ0HPBUsDt2dhf7zYHsDC\nrfIEU7eSHrJtw5fNH8mBDJaEiWci0wy7gg4Fq/ja5xevloznCPLoy07neHK/NqfD\n5mDd82hfBj8vd2tnOZ77FYC/b+TOwSRRqzHRHizGwTeI8x0CJqOgPv3fppkJKNuJ\nzwZFYeafMOie5arq8N+BEw/j3PUVgyoaXOgsbEQ++QKBgQDfs8+Z9fvN3Sphvl4K\na3yx1HnKMraSaipE48vFzI92mlTRIB1uuVFpRrTTh4ukFcEaXW8Ymtlgi0AXrsRf\nTBwcajZgXL5HNJe1yAcob3EB1NYE6saMgHXpXlWZFNJ2wtMvuk37SSj8vx0esUly\nEC6O+cf25w1PJe5xRPXbNI6X7wKBgQDDlU1ptkvqR9+c/Q86CVxh+1LqGJFc8tFD\nCuBFsvPCinndqiYo/sbvrtYmIKnzC24fScKVK/cAHwH2Y1z4i1RL0id7Qux2azyL\n2wfcr0o5A4BBgljbDl7s1mBxE/TRPacP7ZHhOK1UWpH7Z+6X4uI8gAGl+Kpb03Ti\nLKsaXlMTyQKBgGuabm28aNbpX42MqGeStHRFpB+irTdYYeSpPkdy0j9WlR3SuNWd\nxo9BN5HYTU8sN6qa7umC8rUBxl6d7k94qLzySh2n/s75eVAzW14T3OPooNnUpJTI\n5e7PNZVg8qu1oyf+Eayh0FljBHrTBGUda4fSlmEpWrmLoVpStYAvk7d5AoGASiwW\n/Z4q0CCNxyWZXrMqG+aKHUlP52YWwkwfnY8uLnsBmHTsn+NvYnp1sGP2z7tn+emp\nJ5VSyPL5dY1dNszwHQkH/BD3SDmG7qsUIjc/+LtBKpbaR8j9augqDvg4ghnVf47j\nIfyyjykB78wMigF7NuJ8vYq+YLCixRuXkBpxezECgYEAvhma6zuLi9A6378EmkZo\ng4FEfrhB0ZtdfQ1/5LlWBegmaqGHnk4nxqSQF7Wy02/wiZXnsPxr6wagQxZcwcf1\np6h5LF9Zc8mtI8399eFA6KsbDbry3kp5rIQu3CXNxJ0RvBBBHhQ86g06qVQ+kmuO\nwCDKeru1wBOgNQqjx+5dJpY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "medicare@medicare-261318.iam.gserviceaccount.com",
+  "client_id": "103453137912279269877",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/medicare%40medicare-261318.iam.gserviceaccount.com"
+}
