@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Part D Medicare</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://public.tableau.com/views/Medicare_01/Dashboard1?:retry=yes&:display_count=y&publish=yes&:origin=viz_share_link">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="data">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in test">Are we paying too much for prescription drugs?</div>
+        <div class="intro-heading text-uppercase">It's time to find out.</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">About</h2>
+          <h4 class="section-subheading text-muted">Our nation's prescription drug supply chain is sick.</h4>
+          <h3 class="section-subheading text-muted">THE CURE STARTS WITH A HEALTHY DOSE OF <strong>DATA</strong> AND <strong>TRANSPARENCY.</strong></h3>
+
+
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Visualization</h4>
+          <p class="text-muted">There is a lot of publicly-available data on drug pricing, but it is complex, difficult to utilize for useful purposes, and stuck in ugly tables.
+            We created interactive charts and graphs liberate this data so you can start answering the questions you never knew you had..</p>
+        </div>
+
+        <div class="col-md-6">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Research</h4>
+          <p class="text-muted">Data analysis of drug prices sometimes leaves us with more questions than answers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Process -->
+  <section class="page-section" id="timeline">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Process</h2>
+          <h3 class="section-subheading text-muted">Our Timeline</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Getting the Data</h4>
+                  <h4 class="subheading"></h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">We got our Medicare data from <a href="https://www.kaggle.com/cms/cms-medicare">Kaggle.</a>
+                    Using "from google.cloud import bigquery", we were able to query exactly what we needed.
+                    Since the table that we were querying was over 10 million rows, it was too big and was not loading.
+                    So we used Tableau to export it to a CSV.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Our Database</h4>
+                  <h4 class="subheading">SQLite</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Once we got the table that we wanted in a CSV, we loaded it into a Pandas DataFrame.
+                  Cleaned it up, exported it to a json file, and loaded it into our SQLite database.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Interactive  Visual Charts</h4>
+                  <h4 class="subheading">Made by Coleman</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Made in Tableau</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Python Flasked powered RESTful API,HTML/CSS,JavaScript</h4>
+                  <h4 class="subheading"></h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">The JS library we incorporated was ...
+                    Bootstrap is what makes this page look nice!
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Heroku!</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="bg-light page-section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Our Team</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="team-member">
+            <h4>Christina Thip</h4>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member">
+            <h4>Lauren Tureaud</h4>
+          </div>
+        <div id="like_button_container"></div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member">
+            <h4>Coleman Craig</h4>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member">
+            <h4>Charles Glover</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/style.js"></script>
+
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="like_button.js"></script>
+
+</body>
+
+</html>
